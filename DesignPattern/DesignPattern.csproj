@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
+    <ProjectGuid>{74829B0C-3919-435C-A53E-D9C4B51C457C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesignPattern</RootNamespace>
+    <AssemblyName>DesignPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|anycpu' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|anycpu' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IteratorPattern1\Book.cs" />
+    <Compile Include="IteratorPattern1\BookList.cs" />
+    <Compile Include="IteratorPattern1\Aggregate.cs" />
+    <Compile Include="IteratorPattern1\Iterator.cs" />
+    <Compile Include="IteratorPattern1\BookListIterator.cs" />
+    <Compile Include="IteratorPattern1\BookReader.cs" />
+    <Compile Include="IteratorPattern2\IAgregate.cs" />
+    <Compile Include="IteratorPattern2\ITerator.cs" />
+    <Compile Include="IteratorPattern2\IAnimal.cs" />
+    <Compile Include="IteratorPattern2\Dog.cs" />
+    <Compile Include="IteratorPattern2\Cat.cs" />
+    <Compile Include="IteratorPattern2\AnimalList.cs" />
+    <Compile Include="IteratorPattern2\AnimalListIterator.cs" />
+    <Compile Include="IteratorPattern2\Keeper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IteratorPattern1\" />
+    <Folder Include="IteratorPattern2\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
