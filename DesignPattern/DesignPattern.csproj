@@ -46,10 +46,15 @@
     <Compile Include="IteratorPattern2\AnimalList.cs" />
     <Compile Include="IteratorPattern2\AnimalListIterator.cs" />
     <Compile Include="IteratorPattern2\Keeper.cs" />
+    <Compile Include="AdapterPattern1\IChairperson.cs" />
+    <Compile Include="AdapterPattern1\ChairPerson.cs" />
+    <Compile Include="AdapterPattern1\IVeteran.cs" />
+    <Compile Include="AdapterPattern1\ExperiencedNewcomer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="IteratorPattern1\" />
     <Folder Include="IteratorPattern2\" />
+    <Folder Include="AdapterPattern1\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
